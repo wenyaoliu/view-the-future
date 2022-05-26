@@ -1,0 +1,33 @@
+project:
+  type: website
+
+website:
+  title: "View the future and get prepared"
+  navbar:
+    background: secondary
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+  sidebar:
+    # style: "docked"
+    style: "floating"
+    search: true
+    contents:
+      
+      - section: "Basics"
+        contents:
+          - 01_intro.qmd
+      - section: "Layout"
+        contents:
+          - 02_summary.qmd
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
