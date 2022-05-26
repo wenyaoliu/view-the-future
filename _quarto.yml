@@ -4,29 +4,63 @@ project:
 
 website:
   title: "View the future and get prepared"
+  site-path: "https://www.wenyaoliu.com/view-the-future/"
+  favicon: logo.png
+  twitter-card:
+    creator: "@WenyaoL"
+  google-analytics: "G-8J8HW7JWDL"
+  
+  repo-url: https://github.com/wenyaoliu/view-the-future
+  repo-actions: [edit, issue]
   navbar:
     background: secondary
+    # search: false
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+  search: 
+    location: sidebar
+    type: textbox
   sidebar:
     # style: "docked"
     style: "floating"
+    reader-mode: true
     search: true
+    # tools:
+    #   # - icon: twitter
+    #   #   href: https://twitter.com/wenyaoL
+    #   - icon: github
+    #     href: https://github.com/wenyaoliu
+        # menu:
+          # - text: Source Code
+          #   url:  https://github.io/wenyaoliu/view-the-future
+          # - text: Report a Bug
+          #   url:  https://bugs.com
+    page-navigation: true
+    
+    page-footer: 
+      left: "Copyright 2021, Norah Jones" 
+      right: 
+        - icon: github
+          href: https://github.com/
+        - icon: twitter 
+          href: https://twitter.com/ 
+          
     contents:
-      
       - section: "Basics"
         contents:
           - 01_intro.qmd
+      - section: "---"
       - section: "Layout"
         contents:
           - 02_summary.qmd
 
-
 format:
   html:
-    theme: cosmo
+    theme:
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
 
